@@ -40,4 +40,5 @@ That's it. Enjoy ;)
 
 
 #### Note
-Sometimes npm install stuck at a point or you might get error, cannot find lite-server as a command. Then just clone the repository into another directory and again run ``` npm install ``` and ```typings install -save -global  ```. 
+* For performance reason, please run your browser using your high end graphic card.
+* Sometimes npm install stuck at a point or you might get error, cannot find lite-server as a command. Then just clone the repository into another directory and again run ``` npm install ``` and ```typings install -save -global  ```. 
