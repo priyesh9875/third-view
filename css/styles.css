@@ -1,0 +1,108 @@
+html,
+body {
+    height: 100%;
+}
+body { 
+     background: #1f2e2e !important; 
+     padding-top: 50px;
+}
+
+#gui {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    height:100%;
+}
+
+/* Home Page Carousel */
+
+img.home{ 
+    width:100%;
+    height:auto
+}
+header.carousel {
+    
+    text-align: center;
+    height: 100%;
+}
+
+header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner {
+    height: 100%;
+    cursor: pointer;
+}
+.fill img  {
+    padding-top: 60px;
+}
+
+.carousel-desc {
+    font-family: cursive;
+    text-align: right;
+    font-size: 20px;
+}
+
+/* feature section on home page */
+div#page2 {
+    background-image: url( '../assets/img/home.jpg' );
+    width: 100%;
+    min-height: 90%;
+    color: #ffffcc;
+}
+
+div.panel-body {
+    text-align: center;
+    color: #221122;
+}
+div.panel-body-main {
+    text-align: left
+}
+
+div.panel-img img {
+    width: 250px;
+    height: auto;
+    height: 180px;
+    
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #1f2e2e;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color: greenyellow;
+    
+}
+.footer-content {
+    padding-top: 12px;
+}
+
+
+#about {
+    background-image: url( '../assets/img/back.jpg' );
+    width: 100%;
+    min-height: 90%;
+}
+
+#about > div.row {
+    padding-top: 5%;
+}
+
+
+/* threejs scene demo  */
+div.demo {
+    width: 100%;
+    height: 100%;
+    background-image: url( '../assets/img/demo-back.jpg' );
+}
+.title-demo {
+    font-family: cursive;
+    font-size: 25px;
+    color: #ffffcc;
+    padding-top: 20px;
+}
+
+
+
+
