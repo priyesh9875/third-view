@@ -1,0 +1,108 @@
+<div class="demo text-center">
+    <p class="title-demo">{{ title }}</p>
+    <!-- Demo option section -->
+    <div class="container-fluid" id="about">
+           <div class="row text-center">
+                 <div class="item col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><i class="glyphicon glyphicon-eye-open"></i> Camera types</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-img"><img src="assets/img/camera.png" alt="camera demo image" class="img img-rounded" /></div>
+                            <br/>
+                            <br/>
+                            <div class="panel-body-main"><p>This demo allows to clearly distinguish between two most common types of camera, Perspective and Orthographic .</p>
+                            <a [routerLink]="['CameraType']" class="btn btn-default">Try yourself</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Material types</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-img"><img src="assets/img/material.png" alt="material demo image" class="img img-rounded" /></div>
+                            <br/>
+                            <br/>
+                            <div class="panel-body-main"><p>This demo let you know more about <b>Phong</b> and <b>Lambert</b> material type.</p>
+                            <a [routerLink]="['MaterialType']" class="btn btn-default">Get started</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Light models</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-img">
+                                <img src="assets/img/light.png"  alt="Light models" class="img img-rounded" />
+                            </div>
+                            <br/>
+                            <br/>
+                            <div class="panel-body-main">
+                                <p>This demo will take you to world where you can understant different types of lights a better way.</p>
+                                <a [routerLink]="['LightType']" class="btn btn-default">Learn more</a>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4>3D viewing pipeling</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="panel-img">
+                                    <img src="assets/img/pipeline.png"  alt="3D viewing pipeline" class="img img-rounded" />
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="panel-body-main">
+                                    <p>There's no way better than this to take a deep dive into 3D world.</p>
+                                    <a href="/demo/viewPipeline" class="btn btn-default">Learn more</a>
+                                </div>
+                            
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="clearfix"></div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4>Color Models</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="panel-img">
+                                    <img src="assets/img/colorwheel.png"  alt="RGB HSL color model" class="img img-rounded" />
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="panel-body-main">
+                                    <p>Get to know what color models exits in this world</p>
+                                    <a href="/demo/colorHSL" class="btn btn-default">HSL color model</a>
+                                    <a [routerLink]="['ColorRGB']" class="btn btn-default">RGB color model</a>
+                                </div>
+                            
+                            </div>
+                        </div>
+                </div>
+
+            <!-- /.row -->
+        </div>
+    </div>
+
+<!-- Demo option section ends -->
+</div>
+
+
+
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Color models HSL </title>
+    <meta charset="UTF-8">
+
+    <!--jquery-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- yui library -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/yui/3.18.1/yui/yui-min.js"></script>
+
+
+    <style>
+        /** HSL Color Picker **/
+        
+        .picker {
+            padding: 15px;
+            background: #efefef;
+            border: 1px solid #ddd;
+        }
+        
+        #hue-dial,
+        .sliders,
+        .color {
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+            vertical-align: middle;
+        }
+        
+        #hue-dial .yui3-dial-ring {
+            background: url(../assets/img/colorwheel.png) -25px -25px no-repeat;
+        }
+        
+        .sliders {
+            margin: 0 30px;
+        }
+        
+        .sliders strong {
+            font-weight: 600;
+            display: block;
+        }
+        
+        .sliders strong span {
+            font-weight: 300;
+        }
+        
+        .sliders div + div {
+            margin-top: 1em;
+        }
+        
+        .color {
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+        }
+        /** Output Styles **/
+        
+        .picker-output {
+            padding: 20px 10px 10px;
+            background: #efefef;
+            border: 1px solid #ddd;
+            border-top: none;
+            -webkit-box-shadow: inset 0px 6px 10px -5px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: inset 0px 6px 10px -5px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0px 6px 10px -5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .picker-output strong {
+            font-weight: bold;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/home">Third-view</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/demo">Demo</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/about">About us</a></li>
+                            <li><a href="https://github.com/priyesh9875/third-view.git">Source</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="text-center demo">
+        <div class="container">
+
+            <p class="title-demo">HSL color model</p>
+            <!-- HSL Color Picker -->
+            <div class="picker">
+                <div id="hue-dial"></div>
+                <div class="sliders">
+                    <div id="sat-slider"><strong>Saturation: <span></span></strong></div>
+                    <div id="lum-slider"><strong>Luminance: <span></span></strong></div>
+                </div>
+                <div class="color"></div>
+            </div>
+
+            <!-- Picker Output -->
+            <div class="yui3-g picker-output ">
+                <div class="yui3-u-1-3">
+                    <strong>Hexadecimal:</strong>
+                    <input type="text" id="hex-output" class="form-control text-center" />
+                </div>
+                <div class="yui3-u-1-3">
+                    <strong>RGB:</strong>
+                    <input type="text" id="rgb-output" class="form-control text-center" />
+                </div>
+                <div class="yui3-u-1-3">
+                    <strong>HSL:</strong>
+                    <input type="text" id="hsl-output" class="form-control text-center" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <p>OpenSource: third-view &amp; 2016 <a href="https://github.com/priyesh9875/third-view.git" type="button" class="btn btn-xs btn-success">Follow us on Github</a></p>
+        </div>
+    </div>
+
+
+
+    <!--  Loading and initializing YUI library and HSL widget -->
+    <script src="/extras/color-hsl.js"></script>
+
+
+</body>
+
+</html>

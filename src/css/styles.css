@@ -1,0 +1,163 @@
+/*MIT License
+
+Copyright (c) [2016] [Priyesh Kumar]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.*/
+
+html,
+body {
+    height: 100%;
+}
+body { 
+     background: #1f2e2e !important; 
+     padding-top: 50px;
+}
+
+#gui {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    height:100%;
+}
+
+/* Home Page Carousel */
+img.home{ 
+    width:100%;
+    height:auto
+}
+header.carousel {
+    
+    text-align: center;
+    height: 100%;
+}
+
+header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner {
+    height: 100%;
+    cursor: pointer;
+}
+.fill img  {
+    padding-top: 60px;
+}
+
+.carousel-desc {
+    font-family: cursive;
+    text-align: right;
+    font-size: 20px;
+}
+
+/* feature section on home page */
+div#page2 {
+    background-image: url( '../assets/img/home.jpg' );
+    width: 100%;
+    min-height: 100%;
+    color: #ffffcc;
+}
+
+div.panel-body {
+    text-align: center;
+    color: #221122;
+}
+div.panel-body-main {
+    text-align: left
+}
+
+div.panel-img img {
+    width: 250px;
+    height: auto;
+    height: 180px;
+    
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #1f2e2e;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color: greenyellow;
+    
+}
+.footer-content {
+    padding-top: 12px;
+}
+
+
+#about {
+    background-image: url( '../assets/img/back.jpg' );
+    width: 100%;
+    min-height: 100%;
+}
+
+#about > div.row {
+    padding-top: 5%;
+}
+
+
+/* threejs scene demo  */
+div.demo {
+    width: 100%;
+    min-height: 100%;
+    background-image: url( '../assets/img/demo-back.jpg' );
+}
+.title-demo {
+    font-family: cursive;
+    font-size: 25px;
+    color: #ffffcc;
+    padding-top: 20px;
+}
+
+
+div#reloadBar {
+    width: 100%;
+    text-align: center;
+    color: #221122;
+}
+
+.dg.main .close-button {
+       background: -moz-linear-gradient(center top, #ededed 34%, #dfdfdf 71%);
+       background: -ms-linear-gradient(top, #ededed 34%, #dfdfdf 71%);
+       background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, #ededed), 
+                    color-stop(71%, #dfdfdf));
+       background-color: #ededed;
+       border: 1px solid #dcdcdc;
+       border-radius: 2px;
+       box-shadow: inset 1px 0 9px 0 white;
+       color: black;
+       height: 27px;
+       line-height: 27px;
+       text-align: center;
+       text-shadow: 1px 0 0 white
+} 
+.dg.main .close-button:hover {
+       outline-color: lightblue;
+       outline-style: solid;
+       outline-width: 1.5px
+}
+
+
+div.c select {
+    color: #000000;
+}
+
+#gui  * {
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
