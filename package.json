@@ -1,12 +1,15 @@
 {
   "name": "third-view",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Intractive learning with threeJS, build with angular2 and typescript",
   "author": "Priyesh kumar, (https://github.com/priyesh9875)",
   "contributors": [
     {
       "name": "RajNarayan Dutta",
       "url": "https://github.com/rxdsrex"
+    },
+  "engines": {
+    "node": "8.1.4"
     }
   ],
   "scripts": {
